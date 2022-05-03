@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Awnish kr Singh",
   "license": "ISC",
@@ -20,6 +21,9 @@
     "mongoose": "^6.2.4",
     "nodemon": "^2.0.15",
     "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
 
