@@ -7,7 +7,7 @@ const cors = require("cors");
 
 // Importing from other files the routes
 const authRoutes = require("./routes/auth");
-
+const productRoutes = require("./routes/product");
 // Database connection
 mongoose.connect(process.env.DATABASE, {useNewUrlParser: true , useUnifiedTopology: true  }
 ).then(()=>{
@@ -21,10 +21,10 @@ mongoose.connect(process.env.DATABASE, {useNewUrlParser: true , useUnifiedTopolo
 app.use(bodyParser.json() );
 app.use(cors());
 
-// MY Routs
+// MY Routes
 app.get("/", (req,res)=>{ res.send("HOME") })
 app.use("/api", authRoutes);
-
+app.use("/api", productRoutes);
 
 // Port 
 const port = process.env.PORT || 8001 ;
