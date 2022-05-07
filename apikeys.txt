@@ -1,3 +1,0 @@
-Admin api access token :-> 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
-Admin Api key :-> 85cbba4ec418f5a514088e84db9c4f17
-Admin Secret key :-> b83e35ca218bbacb027f4a138d9cdd34
